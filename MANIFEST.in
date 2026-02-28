@@ -1,1 +1,2 @@
-recursive-include src *.json
+include LICENSE
+include README.md

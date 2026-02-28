@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pollyweb-domain"
-version = "0.1.1"
+version = "1.0.0"
 description = "Domain manifests and message helpers for PollyWeb."
 readme = "README.md"
 requires-python = ">=3.8"
-license = { text = "Apache-2.0" }
+license = "Apache-2.0"
 authors = [
     { name = "jorgemf", email = "pollyweb@pollycore.net" }
 ]
