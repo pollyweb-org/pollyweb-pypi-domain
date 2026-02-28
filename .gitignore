@@ -1,0 +1,7 @@
+src/pollyweb_parallel.egg-info
+dist
+.venv
+__dumps__
+__pycache__
+.DS_Store
+.pypirc.local

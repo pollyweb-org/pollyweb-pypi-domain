@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pollyweb-domain"
+version = "0.1.1"
+description = "Domain manifests and message helpers for PollyWeb."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "jorgemf", email = "pollyweb@pollycore.net" }
+]
+dependencies = [
+    "pollyweb-utils",
+]
+
+[project.urls]
+"Website" = "https://www.pollyweb.org"
+"Logo" = "https://www.pollyweb.org/images/pollyweb-logo.png"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["PW_DOMAIN*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

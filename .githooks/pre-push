@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "[pre-push] Running test suite..."
+
+if [ -d "__dumps__/PARALLEL" ]; then
+  backup_dir="__dumps__/PARALLEL.prepush.$(date +%s)"
+  echo "[pre-push] Rotating prior test dump to ${backup_dir}"
+  mv "__dumps__/PARALLEL" "${backup_dir}"
+fi
+
+if [ -x ".venv/bin/python" ]; then
+  TEST_CMD=(.venv/bin/python -m pytest -q)
+elif command -v pytest >/dev/null 2>&1; then
+  TEST_CMD=(pytest -q)
+else
+  echo "[pre-push] pytest is not installed and .venv is unavailable." >&2
+  echo "[pre-push] Install test dependencies before pushing." >&2
+  exit 1
+fi
+
+"${TEST_CMD[@]}"
+
+echo "[pre-push] Tests passed."
+echo "[pre-push] Running security checks..."
+
+./scripts/check-security.sh
+
+echo "[pre-push] Security checks passed. Proceeding with push."
