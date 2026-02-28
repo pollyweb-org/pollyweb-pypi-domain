@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: pollyweb-domain
+Version: 1.0.1
+Summary: Domain manifests and message helpers for PollyWeb.
+Home-page: https://www.pollyweb.org
+Author: jorgemf
+Author-email: jorgemf <pollyweb@pollycore.net>
+License-Expression: Apache-2.0
+Project-URL: Website, https://www.pollyweb.org
+Project-URL: Logo, https://www.pollyweb.org/images/pollyweb-logo.png
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pollyweb-utils
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# PollyWeb Domain
+
+Domain manifests and message helpers for PollyWeb.
+
+## Installation
+
+```bash
+pip install pollyweb-domain
+```
+
+## Development
+
+```bash
+make test
+```
+
+```bash
+./scripts/publish.sh
+```
