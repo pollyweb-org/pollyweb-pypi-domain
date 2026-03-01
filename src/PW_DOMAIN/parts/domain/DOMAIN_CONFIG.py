@@ -1,3 +1,5 @@
+from typing import Optional
+
 from PW_UTILS.STRUCT import STRUCT
 from PW_UTILS.UTILS import UTILS
 from PW_UTILS.LOG import LOG
@@ -36,16 +38,21 @@ class DOMAIN_CONFIG(STRUCT):
                 given=set.RequireStr(att),
                 expect=self.RequireDomain())
 
-    def RequireDomain(self, set: str = None):
-        ret = self.RequireStr('Domain', set=set)
+    def RequireDomain(self, set: Optional[str] = None):
+        if set is not None:
+            ret = self.RequireStr('Domain', set=set)
+        else:
+            ret = self.RequireStr('Domain')
         if UTILS.GetEmojiInName(ret):
             LOG.RaiseValidationException(f'Invalid domain name: {ret}')
         return ret
 
-    def RequireIsActor(self, set: bool = None):
-        return self.RequireBool('IsActor', set=set)
+    def RequireIsActor(self, set: Optional[bool] = None):
+        if set is not None:
+            return self.RequireBool('IsActor', set=set)
+        return self.RequireBool('IsActor')
 
-    def RequireTalkers(self, set: STRUCT = None):
+    def RequireTalkers(self, set: Optional[STRUCT] = None):
         return self.RequireStruct('Talkers', set=set)
 
     def RequireTalker(self, name: str):
@@ -60,16 +67,16 @@ class DOMAIN_CONFIG(STRUCT):
         UTILS.Require(set)
         return self.RequireStruct('Config', set=set)
 
-    def RequireHandlers(self, set: STRUCT = None):
+    def RequireHandlers(self, set: Optional[STRUCT] = None):
         return self.RequireStruct('Handlers', set=set)
 
-    def RequireBucketFiles(self, set: dict[str, str] = None):
+    def RequireBucketFiles(self, set: Optional[dict[str, str]] = None):
         return self.RequireStruct('Bucket', set=set)
 
-    def RequireDatabase(self, set: STRUCT = None):
+    def RequireDatabase(self, set: Optional[STRUCT] = None):
         return self.RequireStruct('Database', set=set)
 
-    def RequireCrud(self, set: STRUCT = None):
+    def RequireCrud(self, set: Optional[STRUCT] = None):
         return self.RequireStruct('Crud', set=set)
 
     def GetSelfie(self):
@@ -122,14 +129,14 @@ class DOMAIN_CONFIG(STRUCT):
             LOG.RaiseValidationException(f'Domain manifest not found: {domain}')
         return result[0]
 
-    def RequireManifests(self, search: str = None) -> list[MANIFEST]:
+    def RequireManifests(self, search: Optional[str] = None) -> list[MANIFEST]:
         ''' Loads all manifests.'''
 
         LOG.Print('🌐🎭 INTERNET.DOMAIN.RequireManifests()')
         ret: list[MANIFEST] = []
 
         manifests = self.RequireStruct('Manifests')
-        for domain in manifests:
+        for domain in manifests.Obj().keys():
             LOG.Print(
                 '🌐🎭 INTERNET.DOMAIN.RequireManifests: ', f'{domain=}')
 
@@ -146,8 +153,12 @@ class DOMAIN_CONFIG(STRUCT):
 
         return ret
 
-    def RequireKeys(self, set: list[str] = None):
-        return self.RequireAtt('Keys', set=set)
+    def RequireKeys(self, set: Optional[list[str]] = None):
+        if set is not None:
+            return self.RequireAtt('Keys', set=set)
+        return self.RequireAtt('Keys')
 
-    def RequireDKIM(self, set: str = None):
-        return self.RequireStr('DKIM', set=set)
+    def RequireDKIM(self, set: Optional[str] = None):
+        if set is not None:
+            return self.RequireStr('DKIM', set=set)
+        return self.RequireStr('DKIM')
