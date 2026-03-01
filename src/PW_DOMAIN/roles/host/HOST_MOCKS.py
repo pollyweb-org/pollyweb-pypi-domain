@@ -1,7 +1,7 @@
 from HOST import HOST
 from PW_AWS.AWS_TEST import AWS_TEST
-from PW_UTILS.LOG import LOG
-from PW_UTILS.UTILS import UTILS
+from pollyweb import LOG
+from pollyweb import UTILS
 
 
 

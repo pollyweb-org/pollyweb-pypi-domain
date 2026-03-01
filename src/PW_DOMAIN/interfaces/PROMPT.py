@@ -2,11 +2,11 @@ from __future__ import annotations
 from typing import Union
 from PW import PW
 
-from PW_UTILS.LOG import LOG
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import LOG
+from pollyweb import STRUCT
 from PROMPT_OPTION import PROMPT_OPTION
-from PW_UTILS.UTILS import UTILS
-from PW_UTILS.LOG import LOG
+from pollyweb import UTILS
+from pollyweb import LOG
 
 
 class PROMPT(STRUCT):

@@ -1,8 +1,8 @@
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import STRUCT
 from PW_AWS.AWS_TEST import AWS_TEST
 from SYNCAPI import SYNCAPI
 from MSG import MSG
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 import json
 

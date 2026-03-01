@@ -1,8 +1,8 @@
 # 🤝 PW
 
 from PW_AWS.AWS import AWS
-from PW_UTILS.UTILS import UTILS
-from PW_UTILS.LOG import LOG
+from pollyweb import UTILS
+from pollyweb import LOG
 
 
 class CONFIG:

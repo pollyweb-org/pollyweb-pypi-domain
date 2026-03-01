@@ -1,6 +1,6 @@
 # 🤗 HOST
 
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from PW_UTILS.HANDLER import HANDLER
 from MSG import MSG
 

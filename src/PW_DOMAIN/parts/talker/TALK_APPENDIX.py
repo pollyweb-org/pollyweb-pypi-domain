@@ -3,9 +3,9 @@
 # 👉 https://stackoverflow.com/questions/33533148/how-do-i-type-hint-a-method-with-the-type-of-the-enclosing-class
 from __future__ import annotations
 from NLEEBB importNLWEBEB
-from PW_UTILS.LOG import LOG
-from PW_UTILS.STRUCT import STRUCT
-from PW_UTILS.UTILS import UTILS
+from pollyweb import LOG
+from pollyweb import STRUCT
+from pollyweb import UTILS
 
 
 class TALK_APPENDIX(STRUCT):

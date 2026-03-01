@@ -1,7 +1,7 @@
 from PW_AWS.AWS_TEST import AWS_TEST
 from PUBLISHER import PUBLISHER
 from PW_AWS.DYNAMO_MOCK import DYNAMO_MOCK
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class PUBLISHER_MOCKS(PUBLISHER, AWS_TEST):

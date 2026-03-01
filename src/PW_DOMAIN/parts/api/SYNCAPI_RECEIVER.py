@@ -3,14 +3,14 @@
 import json
 
 
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from NLWEB import NLWEB
 from DOMAIN import DOMAIN
 from PW_AWS.AWS import AWS
 from MSG import MSG
 from WEB import WEB
 from SYNCAPI_RECEIVER_MAP import SYNCAPI_RECEIVER_MAP
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 
 class ApiException(Exception):

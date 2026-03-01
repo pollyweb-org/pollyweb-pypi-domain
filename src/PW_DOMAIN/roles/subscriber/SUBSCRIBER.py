@@ -1,13 +1,13 @@
 # 📚 SUBSCRIBER
 
 from NLWEB import NLWEB
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from UPDATE import UPDATE
 from PW_UTILS.HANDLER import HANDLER
 from MSG import MSG
 from SUBSCRIBER_DEDUP import SUBSCRIBER_DEDUP
-from PW_UTILS.UTILS import UTILS
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import UTILS
+from pollyweb import STRUCT
 
 
 # ✅ DONE

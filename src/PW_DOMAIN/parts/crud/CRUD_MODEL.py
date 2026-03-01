@@ -1,9 +1,9 @@
 from NLWEB import NLWEB
 from PW_AWS.AWS import AWS
-from PW_UTILS.LOG import LOG
-from PW_UTILS.STRUCT import STRUCT
-from PW_UTILS.UTILS import UTILS
-from PW_UTILS.DIRECTORY import DIRECTORY
+from pollyweb import LOG
+from pollyweb import STRUCT
+from pollyweb import UTILS
+from pollyweb import DIRECTORY
 
 
 class CRUD_MODEL(STRUCT):

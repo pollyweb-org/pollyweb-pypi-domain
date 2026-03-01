@@ -1,14 +1,14 @@
 # 🤗 HOST
 
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from NLWEB import NLWEB
 from PROMPT import PROMPT
 from TALK_PROMPTS import TALK_PROMPTS
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from NLWEB import NLWEB
 from PROMPT_REPLY import PROMPT_REPLY
 from PROMPT_SESSION import PROMPT_SESSION
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 from HOST_API_BASE import HOST_API_BASE
 

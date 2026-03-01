@@ -1,7 +1,7 @@
 from MSG import MSG
 from MESSENGER import MESSENGER
 from MESSENGER_MOCKS import MESSENGER_MOCKS
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 
 class MESSENGER_TESTS(MESSENGER_MOCKS, MESSENGER):

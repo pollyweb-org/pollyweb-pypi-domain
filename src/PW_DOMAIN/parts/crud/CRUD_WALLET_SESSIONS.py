@@ -1,7 +1,7 @@
 from PW_AWS.AWS import AWS
 from SESSION import SESSION
-from PW_UTILS.STRUCT import STRUCT
-from PW_UTILS.UTILS import UTILS
+from pollyweb import STRUCT
+from pollyweb import UTILS
 
 
 class CRUD_WALLET_SESSIONS:

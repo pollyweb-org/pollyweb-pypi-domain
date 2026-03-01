@@ -1,6 +1,6 @@
 from PW_DOMAIN import DOMAIN_CONFIG
-from PW_UTILS.UTILS import UTILS
-from PW_UTILS.LOG import LOG
+from pollyweb import UTILS
+from pollyweb import LOG
 
 
 class DOMAIN_DEPLOY():

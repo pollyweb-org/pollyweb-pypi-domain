@@ -3,7 +3,7 @@ from PROMPT_REPLY import PROMPT_REPLY
 from TALK import TALK
 from PW_AWS.AWS_TEST import AWS_TEST
 from SESSION import SESSION
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from TALKER_STEP import TALKER_STEP
 
 

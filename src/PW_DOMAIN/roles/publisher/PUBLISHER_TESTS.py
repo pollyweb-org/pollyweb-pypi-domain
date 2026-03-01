@@ -1,10 +1,10 @@
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from PW_AWS.AWS_TEST import AWS_TEST
 from PUBLISHER import PUBLISHER
 from PUBLISHER_SUBSCRIBER import PUBLISHER_SUBSCRIBER
 from PUBLISHER_UPDATE import PUBLISHER_UPDATE
 
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 
 class PUBLISHER_TESTS(PUBLISHER, AWS_TEST):

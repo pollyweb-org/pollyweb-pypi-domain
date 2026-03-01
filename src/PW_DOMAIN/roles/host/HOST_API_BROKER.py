@@ -1,10 +1,10 @@
 # 🤗 HOST
 
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from NLWEB import NLWEB
 from MSG import MSG
-from PW_UTILS.STRUCT import STRUCT
-from PW_UTILS.UTILS import UTILS
+from pollyweb import STRUCT
+from pollyweb import UTILS
 
 
 from HOST_API_BASE import HOST_API_BASE

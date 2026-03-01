@@ -5,11 +5,11 @@ from typing import Union
 from NLWEB import NLWEB
 from TALKER_GROUP import TALKER_GROUP
 
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from TALK_BASE import TALK_BASE
 from TALKER_STEP import TALKER_STEP
-from PW_UTILS.LOG import LOG
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import LOG
+from pollyweb import STRUCT
 
 
 class TALK_STACK_ITEM(STRUCT):

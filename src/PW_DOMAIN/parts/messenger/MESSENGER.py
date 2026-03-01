@@ -4,8 +4,8 @@ from PW_AWS.AWS import AWS
 from NLWEB import NLWEB
 from MESSENGER_CALLBACK import MESSENGER_CALLBACK
 from MSG import MSG
-from PW_UTILS.UTILS import UTILS
-from PW_UTILS.LOG import LOG
+from pollyweb import UTILS
+from pollyweb import LOG
 
 
 # ✅ DONE

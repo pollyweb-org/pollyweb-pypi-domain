@@ -5,7 +5,7 @@ from HOST_TALKER import HOST_TALKER
 
 from PW_AWS.ITEM import ITEM
 from PW_AWS.AWS import AWS
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class HOST_TALKERS():

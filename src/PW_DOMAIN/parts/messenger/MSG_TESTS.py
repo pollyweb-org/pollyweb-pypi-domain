@@ -1,10 +1,10 @@
 # 📚 MSG
 
-from PW_UTILS.TESTS import TESTS
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import TESTS
+from pollyweb import STRUCT
 from MSG import MSG
 from WEB_MOCK import WEB_MOCK
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 
 class MSG_TESTS(MSG):

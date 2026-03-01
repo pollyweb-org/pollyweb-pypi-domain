@@ -1,7 +1,7 @@
 from PROMPT_OPTION import PROMPT_OPTION
 from PROMPT import PROMPT
-from PW_UTILS.TESTS import TESTS
-from PW_UTILS.LOG import LOG
+from pollyweb import TESTS
+from pollyweb import LOG
 import json
 
 

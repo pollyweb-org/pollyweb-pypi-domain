@@ -11,9 +11,9 @@ from PW_AWS.ITEM import ITEM
 from MSG import MSG
 from PROMPT_SESSION import PROMPT_SESSION
 from SESSION import SESSION
-from PW_UTILS.UTILS import UTILS
-from PW_UTILS.STRUCT import STRUCT
-from PW_UTILS.LOG import LOG
+from pollyweb import UTILS
+from pollyweb import STRUCT
+from pollyweb import LOG
 from VAULT_DISCLOSURE import VAULT_DISCLOSURE
 
 

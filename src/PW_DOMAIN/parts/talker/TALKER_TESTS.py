@@ -1,12 +1,12 @@
 from PW_AWS.AWS_TEST import AWS_TEST
 from NLWEB import NLWEB
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from MSG import MSG
 from PROMPT import PROMPT
 from SESSION import SESSION
 from TALK import TALK
 from TALKER import TALKER
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class TALKER_TESTS(TALKER, AWS_TEST):

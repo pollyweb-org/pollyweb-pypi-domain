@@ -1,6 +1,6 @@
 # 👉 https://stackoverflow.com/questions/33533148/how-do-i-type-hint-a-method-with-the-type-of-the-enclosing-class
 from __future__ import annotations
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 
 from TALK_BASE import TALK_BASE
@@ -32,7 +32,7 @@ class TALK_PARSE(TALK_BASE):
     def ParseScript(self, script:str|list[str]):
         '''👉 Loads a script into the Groups[].'''
 
-        from PW_UTILS.UTILS import UTILS
+        from pollyweb import UTILS
         UTILS.AssertIsAnyType(script, options=[str, list])
         
         if type(script) == str:

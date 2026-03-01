@@ -1,7 +1,7 @@
 from CONSUMER import CONSUMER
 from PW_AWS.AWS_TEST import AWS_TEST
 from HOST_MOCKS import HOST_MOCKS
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 
 class CONSUMER_MOCKS(CONSUMER, HOST_MOCKS, AWS_TEST):

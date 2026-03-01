@@ -1,7 +1,7 @@
 
 
 from NLWEB import NLWEB
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import STRUCT
 
 
 class CRUD_MODEL_GROUP(STRUCT):

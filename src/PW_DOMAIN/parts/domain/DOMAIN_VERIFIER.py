@@ -1,7 +1,7 @@
 from PW_AWS.AWS import AWS
 from PW_AWS.DEPLOYER_EXEC_LAMBDA import DEPLOYER_EXEC_LAMBDA
-from PW_UTILS.LOG import LOG
-from PW_UTILS.TESTS import TESTS
+from pollyweb import LOG
+from pollyweb import TESTS
 
 
 class DOMAIN_VERIFIER():

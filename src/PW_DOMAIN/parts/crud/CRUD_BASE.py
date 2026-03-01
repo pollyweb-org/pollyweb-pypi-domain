@@ -1,5 +1,5 @@
 
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class CRUD_BASE():

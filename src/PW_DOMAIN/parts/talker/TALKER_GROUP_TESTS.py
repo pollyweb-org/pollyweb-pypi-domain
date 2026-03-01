@@ -5,8 +5,8 @@ from __future__ import annotations
 
 from TALKER_STEP import TALKER_STEP
 from TALKER_GROUP import TALKER_GROUP
-from PW_UTILS.TESTS import TESTS
-from PW_UTILS.LOG import LOG
+from pollyweb import TESTS
+from pollyweb import LOG
 
 
 class TALKER_GROUP_TESTS(TALKER_GROUP):

@@ -1,7 +1,7 @@
 from PW_DOMAIN import CODE
 from PW import PW
 from MSG import MSG
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import STRUCT
 
 
 class VAULT_ONBOUND(STRUCT):

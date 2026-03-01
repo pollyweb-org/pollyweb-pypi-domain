@@ -2,9 +2,9 @@ from PW_AWS.AWS import AWS
 from MANIFEST import MANIFEST
 from MANIFESTER import MANIFESTER
 from PW_AWS.AWS_TEST import AWS_TEST
-from PW_UTILS.LOG import LOG
-from PW_UTILS.TESTS import TESTS
-from PW_UTILS.UTILS import UTILS
+from pollyweb import LOG
+from pollyweb import TESTS
+from pollyweb import UTILS
 
 
 class MANIFESTER_TESTS(MANIFESTER, AWS_TEST):

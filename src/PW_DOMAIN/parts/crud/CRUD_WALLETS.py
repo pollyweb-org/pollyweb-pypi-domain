@@ -1,7 +1,7 @@
 from CRUD_WALLET import CRUD_WALLET
 from PW_AWS.AWS import AWS
-from PW_UTILS.STRUCT import STRUCT
-from PW_UTILS.UTILS import UTILS
+from pollyweb import STRUCT
+from pollyweb import UTILS
 
 
 class CRUD_WALLETS():

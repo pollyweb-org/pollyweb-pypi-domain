@@ -6,7 +6,7 @@ from PW_UTILS.HANDLER import HANDLER
 from MSG import MSG
 from NLWEB import NLWEB
 from PW_AWS.ITEM import ITEM
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import STRUCT
 from PW_AWS.AWS import AWS
 
 

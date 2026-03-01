@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from PW_AWS.ITEM import ITEM
 from MSG import MSG
 

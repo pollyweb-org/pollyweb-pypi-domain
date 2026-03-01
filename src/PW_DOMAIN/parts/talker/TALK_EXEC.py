@@ -5,7 +5,7 @@ from typing import Union
 
 from NLWEB import NLWEB
 from PROMPT_REPLY import PROMPT_REPLY
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import STRUCT
 from TALKER_EVALUATE import TALKER_EVALUATE
 from TALK_BASE import TALK_BASE
 from TALK_INDEX import TALK_INDEX
@@ -13,9 +13,9 @@ from TALK_PROMPTS import TALK_PROMPTS
 from TALKER_STEP import TALKER_STEP
 from TALKER_GROUP import TALKER_GROUP
 from PROMPT import PROMPT
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from MSG import MSG
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 class TALK_EXEC(TALK_INDEX, TALK_PROMPTS, TALK_BASE):
     '''😃 Executes the dialog in a talk.

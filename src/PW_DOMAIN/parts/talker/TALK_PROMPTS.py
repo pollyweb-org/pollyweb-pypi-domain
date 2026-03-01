@@ -2,12 +2,12 @@
 from MSG import MSG
 from PROMPT import PROMPT
 from NLWEB import NLWEB
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from PROMPT_REPLY import PROMPT_REPLY
 from SESSION import SESSION
 from TALK_BASE import TALK_BASE
 from TALK_PROMPT import TALK_PROMPT
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class TALK_PROMPTS(TALK_BASE):

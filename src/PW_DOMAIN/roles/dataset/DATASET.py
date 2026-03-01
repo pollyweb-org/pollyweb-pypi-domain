@@ -2,8 +2,8 @@ from DATASET_OFFERS import DATASET_OFFERS
 from PW_DOMAIN import CODE
 from PW import PW
 from MSG import MSG
-from PW_UTILS.STRUCT import STRUCT
-from PW_UTILS.UTILS import UTILS
+from pollyweb import STRUCT
+from pollyweb import UTILS
 
 
 class DATASET:

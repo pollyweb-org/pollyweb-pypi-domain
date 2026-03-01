@@ -1,6 +1,6 @@
 from QR import QR
-from PW_UTILS.TESTS import TESTS
-from PW_UTILS.LOG import LOG
+from pollyweb import TESTS
+from pollyweb import LOG
    
 
 class QR_TESTS(QR):

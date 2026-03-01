@@ -3,9 +3,9 @@
 from __future__ import annotations
 from typing import Union, Any
 
-from PW_UTILS.UTILS import UTILS
-from PW_UTILS.STRUCT import STRUCT
-from PW_UTILS.LOG import LOG
+from pollyweb import UTILS
+from pollyweb import STRUCT
+from pollyweb import LOG
 
 
 class ITEM_TABLE:

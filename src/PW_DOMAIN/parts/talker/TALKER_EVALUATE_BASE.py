@@ -1,9 +1,9 @@
-from PW_UTILS.LOG import LOG
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import LOG
+from pollyweb import STRUCT
 from SESSION import SESSION
 from TALKER_STEP import TALKER_STEP
 from TALK_PROMPT import TALK_PROMPT
-from PW_UTILS.UTILS import UTILS 
+from pollyweb import UTILS 
 
 
 class TALKER_EVALUATE_BASE(STRUCT):

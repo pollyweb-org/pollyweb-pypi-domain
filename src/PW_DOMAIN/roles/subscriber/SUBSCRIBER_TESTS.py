@@ -1,7 +1,7 @@
 from SUBSCRIBER import SUBSCRIBER
 from PW_AWS.AWS_TEST import AWS_TEST
-from PW_UTILS.UTILS import UTILS
-from PW_UTILS.LOG import LOG
+from pollyweb import UTILS
+from pollyweb import LOG
 
 
 class SUBSCRIBER_TESTS(SUBSCRIBER, AWS_TEST):

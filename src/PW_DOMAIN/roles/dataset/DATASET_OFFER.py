@@ -1,6 +1,6 @@
 from PW_AWS.ITEM import ITEM
-from PW_UTILS.LOG import LOG
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import LOG
+from pollyweb import STRUCT
 
 
 class DATASET_OFFER(ITEM):

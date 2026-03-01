@@ -1,7 +1,7 @@
 from __future__ import annotations
 from CRUD_ENTITY import CRUD_ENTITY
 from PW_AWS.AWS import AWS
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class CRUD_ENTITIES:

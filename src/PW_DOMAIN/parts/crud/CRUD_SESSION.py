@@ -1,7 +1,7 @@
 from CRUD_BASE import CRUD_BASE
 from NLWEB import NLWEB
 from HOST_SESSION import HOST_SESSION
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class CRUD_SESSION(CRUD_BASE):

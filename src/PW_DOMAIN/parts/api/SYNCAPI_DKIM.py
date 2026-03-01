@@ -1,9 +1,9 @@
 # 📚 DKIM (part of SYNCAPI)
 
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import STRUCT
 from PW_AWS.AWS import AWS
-from PW_UTILS.LOG import LOG
-from PW_UTILS.UTILS import UTILS
+from pollyweb import LOG
+from pollyweb import UTILS
 
 
 

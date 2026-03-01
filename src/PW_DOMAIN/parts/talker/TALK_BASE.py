@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from typing import Union
 
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 from SESSION import SESSION
 from NLWEB import NLWEB
@@ -12,7 +12,7 @@ from PW_AWS.ITEM import ITEM
 from PW_UTILS.HANDLER import HANDLER
 from TALKER_STEP import TALKER_STEP
 from TALKER_GROUP import TALKER_GROUP
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class TALK_BASE(HANDLER, ITEM):

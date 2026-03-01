@@ -4,11 +4,11 @@ import os
 from typing import Optional
 from PW_AWS.DEPLOYER_EXEC_PYTHON import DEPLOYER_EXEC_PYTHON
 from PW_AWS.DEPLOYER_TASK import DEPLOYER_TASK
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 from PW_DOMAIN import MANIFEST, ManifestNotAvailableException
 from ACTOR import ACTOR
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from PW_AWS.AWS import AWS
 from PW import PW
 

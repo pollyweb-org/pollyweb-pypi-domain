@@ -6,11 +6,11 @@ from CRUD_WALLET_ITEM import CRUD_WALLET_ITEM
 from HOST_SESSION import HOST_SESSION
 from PROMPT import PROMPT
 from NLWEB import NLWEB
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from PROMPT_REPLY import PROMPT_REPLY
 from SESSION import SESSION
 from TALK_PROMPT import TALK_PROMPT
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class CRUD_ANSWERS(CRUD_SESSION, CRUD_BASE):

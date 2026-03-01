@@ -12,11 +12,11 @@
 '''
 
 from NLWEB import NLWEB
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from UPDATE import UPDATE
 from PW_UTILS.HANDLER import HANDLER
 from MSG import MSG
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from PUBLISHER_CORRELATION import PUBLISHER_CORRELATION
 from PUBLISHER_DOMAIN import PUBLISHER_DOMAIN
 from PUBLISHER_SUBSCRIBER import PUBLISHER_SUBSCRIBER

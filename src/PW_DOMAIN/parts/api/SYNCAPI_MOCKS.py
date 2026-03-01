@@ -1,7 +1,7 @@
 from PW_AWS.AWS_TEST import AWS_TEST
 from WEB import WEB
 from SYNCAPI import SYNCAPI
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import STRUCT
 
 
 class SYNCAPI_MOCKS(SYNCAPI, AWS_TEST):

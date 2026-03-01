@@ -1,7 +1,7 @@
 from PW_AWS.AWS_TEST import AWS_TEST
 from VAULT import VAULT
 from HOST_MOCKS import HOST_MOCKS
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class VAULT_MOCKS(VAULT, HOST_MOCKS, AWS_TEST):

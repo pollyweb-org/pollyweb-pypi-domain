@@ -5,10 +5,10 @@ from __future__ import annotations
 
 from typing import List, Set, Tuple, Dict, Union
 
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
-from PW_UTILS.STRUCT import STRUCT
-from PW_UTILS.UTILS import UTILS
+from pollyweb import STRUCT
+from pollyweb import UTILS
 
 
 class TALKER_STEP(STRUCT):

@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from typing import Union
 
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from PW_AWS.ITEM import ITEM
 from MSG import MSG
 from PW_AWS.AWS import AWS

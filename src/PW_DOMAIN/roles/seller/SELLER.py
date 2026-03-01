@@ -8,9 +8,9 @@ from PW import PW
 from SESSION import SESSION
 from CHARGE import CHARGE
 from SELLER_CHARGE import SELLER_CHARGE
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from PW_UTILS.HANDLER import HANDLER
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
    
 # ✅ DONE

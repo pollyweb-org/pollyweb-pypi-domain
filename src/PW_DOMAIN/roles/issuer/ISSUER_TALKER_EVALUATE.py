@@ -1,7 +1,7 @@
 
 from PW import PW
 from TALKER_EVALUATE_BASE import TALKER_EVALUATE_BASE
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class ISSUER_TALKER_EVALUATE(TALKER_EVALUATE_BASE):

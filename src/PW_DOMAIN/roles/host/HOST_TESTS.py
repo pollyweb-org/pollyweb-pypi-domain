@@ -6,7 +6,7 @@ from PW_AWS.AWS_TEST import AWS_TEST
 from PW_AWS.AWS import AWS
 from MSG import MSG
 from NLWEB import NLWEB
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from TALK import TALK
 
 

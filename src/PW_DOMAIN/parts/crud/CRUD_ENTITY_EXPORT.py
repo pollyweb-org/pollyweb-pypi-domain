@@ -1,5 +1,5 @@
 from CRUD_ENTITY_PART import CRUD_ENTITY_PART
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class CRUD_ENTITY_EXPORT(CRUD_ENTITY_PART):

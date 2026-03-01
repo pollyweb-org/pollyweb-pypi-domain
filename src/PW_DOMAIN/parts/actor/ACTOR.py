@@ -23,7 +23,7 @@ class ACTOR():
     @classmethod
     def UTILS(cls):
         '''👉️ Generic methods.'''
-        from PW_UTILS.UTILS import UTILS as proxy
+        from pollyweb import UTILS as proxy
         return proxy()
     
     

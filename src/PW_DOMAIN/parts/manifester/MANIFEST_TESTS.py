@@ -1,8 +1,8 @@
 from MANIFEST_MOCKS import MANIFEST_MOCKS
 from PW_DOMAIN import MANIFEST
-from PW_UTILS.TESTS import TESTS
-from PW_UTILS.LOG import LOG
-from PW_UTILS.UTILS import UTILS
+from pollyweb import TESTS
+from pollyweb import LOG
+from pollyweb import UTILS
 
 
 class MANIFEST_TESTS(MANIFEST_MOCKS, MANIFEST):

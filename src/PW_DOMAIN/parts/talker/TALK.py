@@ -10,7 +10,7 @@ from TALK_INDEX import TALK_INDEX
 from TALK_BASE import TALK_BASE
 from TALK_EXEC import TALK_EXEC
 from TALK_PARSE import TALK_PARSE
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 class TALK(TALK_EXEC, TALK_INDEX, TALK_PARSE, TALK_BASE):
     

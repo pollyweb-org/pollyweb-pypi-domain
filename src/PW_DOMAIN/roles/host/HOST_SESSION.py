@@ -3,17 +3,17 @@
 # 👉 https://stackoverflow.com/questions/33533148/how-do-i-type-hint-a-method-with-the-type-of-the-enclosing-class
 from __future__ import annotations
 
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 from QUERY import CONSUMER_QUERY
 
 from SESSION import SESSION
 
 from TOKEN import TOKEN
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import STRUCT
 from PW_AWS.ITEM import ITEM
 from MSG import MSG
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from NLWEB import NLWEB
 
 

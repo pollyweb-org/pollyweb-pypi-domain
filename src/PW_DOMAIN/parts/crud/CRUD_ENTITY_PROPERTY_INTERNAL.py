@@ -1,7 +1,7 @@
 from CRUD_WALLET import CRUD_WALLET
 from NLWEB import NLWEB
-from PW_UTILS.STRUCT import STRUCT
-from PW_UTILS.UTILS import UTILS
+from pollyweb import STRUCT
+from pollyweb import UTILS
 
 
 class CRUD_ENTITY_PROPERTY_INTERNAL(STRUCT):

@@ -2,9 +2,9 @@
 from PW_AWS.AWS import AWS
 from NLWEB import NLWEB
 from PW_AWS.ITEM import ITEM
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from MSG import MSG
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class TRANSFER(ITEM):

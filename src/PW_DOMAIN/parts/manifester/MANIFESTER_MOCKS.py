@@ -1,9 +1,9 @@
 from PW_AWS.AWS import AWS
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from MANIFESTER import MANIFESTER
 from PW_AWS.AWS_TEST import AWS_TEST
 from MANIFEST import MANIFEST
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class MANIFESTER_MOCKS(MANIFESTER, AWS_TEST):

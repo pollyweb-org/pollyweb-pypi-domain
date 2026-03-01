@@ -1,8 +1,8 @@
 from PW_AWS.DEPLOYER_EXEC_LAMBDA import DEPLOYER_EXEC_LAMBDA
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from SYNCAPI import SYNCAPI
 from MSG import MSG
-from PW_UTILS.TESTS import TESTS
+from pollyweb import TESTS
 
 
 class SYNCAPI_VERIFIER(SYNCAPI):

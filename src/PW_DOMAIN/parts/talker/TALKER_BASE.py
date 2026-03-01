@@ -7,9 +7,9 @@ from PW_AWS.AWS import AWS
 from SESSION import SESSION
 from TALK import TALK
 from PW_UTILS.HANDLER import HANDLER
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from PROMPT_REPLY import PROMPT_REPLY
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 
 class TALKER_BASE(HANDLER):

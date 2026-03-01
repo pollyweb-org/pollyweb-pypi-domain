@@ -4,10 +4,10 @@
 from __future__ import annotations
 
 from HOST_SESSION import HOST_SESSION
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from SESSION import SESSION
 from MSG import MSG
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from NLWEB import NLWEB
 from PW_AWS.AWS import AWS
 

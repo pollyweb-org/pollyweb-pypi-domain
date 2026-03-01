@@ -1,5 +1,5 @@
 """Compatibility loader for the PollyWeb utilities module."""
 
-import PW_UTILS as nl
+import pollyweb as nl
 
 __all__ = ["nl"]

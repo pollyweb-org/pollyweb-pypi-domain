@@ -5,10 +5,10 @@ from __future__ import annotations
 
 from typing import Union
 
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 from TALKER_STEP import TALKER_STEP
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class TALKER_GROUP(TALKER_STEP):

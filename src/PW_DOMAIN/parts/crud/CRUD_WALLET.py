@@ -2,7 +2,7 @@ from CRUD_ENTITY import CRUD_ENTITY
 from CRUD_WALLET_ENTITY import CRUD_WALLET_ENTITY
 from NLWEB import NLWEB
 from PW_AWS.ITEM import ITEM
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 
 class CRUD_WALLET(ITEM):

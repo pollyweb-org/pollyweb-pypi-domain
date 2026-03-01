@@ -1,7 +1,7 @@
 
 from CRUD_ENTITY_PART import CRUD_ENTITY_PART
 from CRUD_WALLET import CRUD_WALLET
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 
 
 class CRUD_ENTITY_PROPERTY(CRUD_ENTITY_PART):

@@ -7,9 +7,9 @@ from SESSION import SESSION
 from MSG import MSG
 from HOST import HOST
 from PW_UTILS.HANDLER import HANDLER
-from PW_UTILS.UTILS import UTILS
+from pollyweb import UTILS
 from PW_DOMAIN import CODE
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 
 class CONSUMER(HOST, HANDLER):

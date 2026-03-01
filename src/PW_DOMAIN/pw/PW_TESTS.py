@@ -1,4 +1,4 @@
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 from PW_PARALLEL.PARALLEL import PARALLEL
 
 

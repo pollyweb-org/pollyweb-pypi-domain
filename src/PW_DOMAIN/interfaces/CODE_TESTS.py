@@ -1,10 +1,10 @@
 # 📚 CODE
 
 from PW_AWS.ITEM import ITEM
-from PW_UTILS.UTILS import UTILS
-from PW_UTILS.LOG import LOG
+from pollyweb import UTILS
+from pollyweb import LOG
 from PW_DOMAIN import CODE
-from PW_UTILS.TESTS import TESTS
+from pollyweb import TESTS
 
 class CODE_TESTS(CODE):
 

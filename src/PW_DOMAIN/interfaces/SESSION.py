@@ -1,7 +1,7 @@
 # 👉 https://stackoverflow.com/questions/33533148/how-do-i-type-hint-a-method-with-the-type-of-the-enclosing-class
 from __future__ import annotations
 
-from PW_UTILS.STRUCT import STRUCT
+from pollyweb import STRUCT
 
 
 

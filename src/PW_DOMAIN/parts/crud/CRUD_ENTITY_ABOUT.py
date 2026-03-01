@@ -1,8 +1,8 @@
 
 
-from PW_UTILS.LOG import LOG
-from PW_UTILS.STRUCT import STRUCT
-from PW_UTILS.UTILS import UTILS
+from pollyweb import LOG
+from pollyweb import STRUCT
+from pollyweb import UTILS
 
 
 class CRUD_ENTITY_ABOUT (STRUCT):

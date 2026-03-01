@@ -1,6 +1,6 @@
 # 🤗 HOST
 
-from PW_UTILS.LOG import LOG
+from pollyweb import LOG
 
 from HOST_API_BASE import HOST_API_BASE
 
