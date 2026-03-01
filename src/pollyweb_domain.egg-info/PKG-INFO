@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: pollyweb-domain
-Version: 1.0.1
+Version: 1.0.2
 Summary: Domain manifests and message helpers for PollyWeb.
 Home-page: https://www.pollyweb.org
 Author: jorgemf
@@ -11,7 +11,7 @@ Project-URL: Logo, https://www.pollyweb.org/images/pollyweb-logo.png
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE
-Requires-Dist: pollyweb-utils
+Requires-Dist: pollyweb-utils>=1.0.3
 Dynamic: author
 Dynamic: home-page
 Dynamic: license-file

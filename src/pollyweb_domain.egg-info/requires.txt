@@ -1,1 +1,1 @@
-pollyweb-utils
+pollyweb-utils>=1.0.3
