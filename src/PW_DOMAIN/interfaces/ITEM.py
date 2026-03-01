@@ -1,7 +1,7 @@
 # 📚 ITEM
 
 from __future__ import annotations
-from typing import Union
+from typing import Union, Any
 
 from PW_UTILS.UTILS import UTILS
 from PW_UTILS.STRUCT import STRUCT
@@ -12,7 +12,7 @@ class ITEM_TABLE:
 
     ICON = '🪣'
 
-    def Update(self, item: Union[dict[str, any], STRUCT]) -> "ITEM":
+    def Update(self, item: Union[dict[str, Any], STRUCT]) -> "ITEM":
         LOG.RaiseException('Please override!')
 
     def Delete(self, struct: "ITEM"):
@@ -30,7 +30,7 @@ class ITEM(STRUCT):
     4. item.Update()
     '''
 
-    def __init__(self, item: any = {}, table: ITEM_TABLE = None):
+    def __init__(self, item: Any = {}, table: Union[ITEM_TABLE, None] = None):
         if table is not None:
             UTILS.AssertIsType(table, ITEM_TABLE)
             self.__itemTable = table

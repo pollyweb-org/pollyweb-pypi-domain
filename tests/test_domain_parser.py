@@ -33,6 +33,7 @@ Trusts:
 
     cfg = DOMAIN_PARSER.ParseDomain(domain=domain, folder=str(folder))
 
+    assert cfg is not None
     assert cfg.RequireDomain() == domain
     assert cfg.RequireConfig().RequireStr('Broker') == 'broker.com'
     manifest = cfg.RequireManifest(domain)
