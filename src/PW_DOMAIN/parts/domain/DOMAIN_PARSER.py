@@ -2,7 +2,7 @@ from __future__ import annotations
 from .DOMAIN_CONFIG import DOMAIN_CONFIG
 from PW_UTILS.LOG import LOG
 
-from .interfaces.manifest.MANIFEST import MANIFEST
+from ...interfaces.manifest.MANIFEST import MANIFEST
 from PW_UTILS.STRUCT import STRUCT
 from PW_UTILS.UTILS import UTILS
 from PW_UTILS.DIRECTORY import DIRECTORY
