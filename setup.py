@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="pollyweb-domain",
-    version="1.0.0",
+    version="1.0.2",
     description="Domain manifests and message helpers for PollyWeb.",
     author="jorgemf",
     author_email="pollyweb@pollycore.net",
