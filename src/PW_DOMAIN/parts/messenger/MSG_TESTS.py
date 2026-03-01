@@ -18,7 +18,7 @@ class MSG_TESTS(MSG):
     Example:
     { 
         "Header": {
-            "Code": "nlweb.org/msg",
+            "Code": "pollyweb.org/msg",
             "Version": "1",
             "From": "any-sender.com",
             "To": "any-receiver.com",
@@ -358,7 +358,7 @@ class MSG_TESTS(MSG):
     def TestSend(cls):
 
         WEB_MOCK.ResetWebMock()
-        WEB_MOCK.MockUrl('https://nlweb.t/inbox', domain='t')
+        WEB_MOCK.MockUrl('https://pollyweb.t/inbox', domain='t')
 
         m = MSG.Wrap(to='t', subject='s', body='b')
         m.RequireFrom('f')

@@ -11,7 +11,7 @@ class CRUD_WALLET(ITEM):
         PublicKey: <publicKey>
         Binds: 
           - ID: 429e0b51-4a30-43bd-9d20-5648ec1c5350
-            Code: nlweb.org/VAULT/BIND
+            Code: pollyweb.org/VAULT/BIND
     '''
     
 

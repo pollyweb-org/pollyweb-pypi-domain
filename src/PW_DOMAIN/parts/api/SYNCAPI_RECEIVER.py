@@ -49,7 +49,7 @@ class SYNCAPI_RECEIVER:
 
         msg = MSG(envelope)
         domain = msg.RequireFrom()
-        hostname = f'nlweb._domainkey.{domain}'
+        hostname = f'pollyweb._domainkey.{domain}'
         checks.append(f'Valid domain?: {hostname}')
         
         d = DOMAIN(domain)
@@ -64,7 +64,7 @@ class SYNCAPI_RECEIVER:
         isDkimSetUp = d.IsDkimSetUp()
         checks.append(f'DKIM set?: {isDkimSetUp}')
         if not isDkimSetUp:
-            raise ApiException(f"Sender DKIM not found for nlweb.")
+            raise ApiException(f"Sender DKIM not found for pollyweb.")
         
         hasPublicKey = d.HasPublicKey()
         checks.append(f'Public Key set?: {hasPublicKey}')
@@ -217,11 +217,11 @@ class SYNCAPI_RECEIVER:
             "Header":{
                 "Correlation":"bb37d258-015c-497e-8a67-50bf244a9299",
                 "SentAt":"2023-06-24T23:08:24.550719Z",
-                "To":"105b4478-eaa5-4b73-b2a5-4da2c3c2dac0.dev.nlweb.org",
+                "To":"105b4478-eaa5-4b73-b2a5-4da2c3c2dac0.dev.pollyweb.org",
                 "Subject":"AnyMethod",
-                "Code":"nlweb.org/msg",
+                "Code":"pollyweb.org/msg",
                 "Version":"1",
-                "From":"105b4478-eaa5-4b73-b2a5-4da2c3c2dac0.dev.nlweb.org"
+                "From":"105b4478-eaa5-4b73-b2a5-4da2c3c2dac0.dev.pollyweb.org"
             },
             "Body":{
             },

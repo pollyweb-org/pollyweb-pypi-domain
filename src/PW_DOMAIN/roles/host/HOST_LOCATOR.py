@@ -10,7 +10,7 @@ from EPHEMERAL_HOST_LOCATOR import EPHEMERAL_HOST_LOCATOR
 class HOST_LOCATOR(EPHEMERAL_HOST_LOCATOR, ITEM):
     ''' 🪣 Holds all the place locators for the host.
     {
-        ID: nlweb.org/HOST,SALON
+        ID: pollyweb.org/HOST,SALON
         Talker: DefaultTalker
         Ephemeral: 
             Device: 01f08ea1-2b6b-4796-b95d-e6d0656bf31c

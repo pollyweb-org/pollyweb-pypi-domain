@@ -16,7 +16,7 @@ class TALK_PARSE(TALK_BASE):
     Script example:
     --------------
         💬|Order:
-        - SHARE|nlweb.org/PROFILE/NAME/FRIENDLY
+        - SHARE|pollyweb.org/PROFILE/NAME/FRIENDLY
         - RUN|Items
         - CHARGE|{amount}
         - INFO|Wait...

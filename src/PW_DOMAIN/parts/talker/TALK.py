@@ -52,7 +52,7 @@ class TALK(TALK_EXEC, TALK_INDEX, TALK_PARSE, TALK_BASE):
             Steps: [
                 - ID: "0.1"
                     Type: STEP
-                    Parts: [SHARE, nlweb.org/PROFILE/NAME/FRIENDLY]
+                    Parts: [SHARE, pollyweb.org/PROFILE/NAME/FRIENDLY]
                 - ID: "0.2"
                     Type: STEP,
                     Parts: [RUN, Items]

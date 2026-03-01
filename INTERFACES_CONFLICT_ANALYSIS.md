@@ -95,9 +95,9 @@ def VerifySignature(self, publicKey: str = None, validator: object = None):
 
 ### Option C: Adapter in pollyweb-domain
 
-1. Add optional `pollyweb-domain[nlweb]` extra with NLWEB dependency.
-2. Provide `MSG.with_nlweb()` or `MSG_NLWEB` that wraps PW_DOMAIN.MSG and adds NLWEB-based `VerifySignature`/`MatchSubject`.
-3. pollyweb uses the nlweb extra; lambdas use base package.
+1. Add optional `pollyweb-domain[pollyweb]` extra with NLWEB dependency.
+2. Provide `MSG.with_pollyweb()` or `MSG_NLWEB` that wraps PW_DOMAIN.MSG and adds NLWEB-based `VerifySignature`/`MatchSubject`.
+3. pollyweb uses the pollyweb extra; lambdas use base package.
 
 ### Option D: Compatibility shim in pollyweb
 
@@ -112,7 +112,7 @@ def VerifySignature(self, publicKey: str = None, validator: object = None):
 1. **Make pollyweb-domain canonical** for CODE, MANIFEST, MANIFEST_TRUST, DOMAIN_CONFIG, DOMAIN_PARSER, MSG, MSG_RECEIVER, ITEM.
 2. **Add optional NLWEB integration** in pollyweb-domain:
    - `PW_DOMAIN.MSG` stays dependency-free.
-   - Add `PW_DOMAIN.MSG_NLWEB` (or `MSG.with_nlweb_validator()`) in an optional submodule that requires `nlweb` (or similar) as an extra.
+   - Add `PW_DOMAIN.MSG_NLWEB` (or `MSG.with_pollyweb_validator()`) in an optional submodule that requires `pollyweb` (or similar) as an extra.
    - pollyweb uses `MSG_NLWEB` where it needs automatic domain/DKIM resolution.
 3. **Migrate pollyweb** to depend on `pollyweb-domain` and remove duplicated interface code.
 4. **Update pollyweb-aws lambdas** to use `pollyweb-domain` directly (they already fit the validator-injection model).
@@ -130,6 +130,6 @@ def VerifySignature(self, publicKey: str = None, validator: object = None):
 
 1. Decide which option to pursue.
 2. If Option A: add `pollyweb-domain` to pollyweb’s dependencies and create the compatibility layer.
-3. If Option C: add the optional nlweb integration to pollyweb-domain.
+3. If Option C: add the optional pollyweb integration to pollyweb-domain.
 4. Update all consumers (pollyweb, pollyweb-aws, etc.) to import from `PW_DOMAIN` where applicable.
 5. Deprecate or remove duplicated files in `pollyweb/python/interfaces`.

@@ -77,7 +77,7 @@ class HOST_API_BROKER(HOST_API_BASE):
         ''' 🤵🚀 https://quip.com/s9oCAO3UR38A#temp:C:TDDf29b75b2d0214f9a87224b338 
         "Body": {
             "SessionID": "61738d50-d507-42ff-ae87-48d8b9bb0e5a",
-            "Code": "nlweb.org/THING",
+            "Code": "pollyweb.org/THING",
             "Locator": "MY-THING-ID",
             "Language": "en-us",    
             "Binds": [

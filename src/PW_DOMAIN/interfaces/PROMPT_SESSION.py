@@ -14,7 +14,7 @@ class PROMPT_SESSION(STRUCT):
         "HostTranslation": "Any Host",
         "SmallIcon": "https://...",
         "BigIcon": "https://...",
-        "Code": "nlweb.org/HOST", 
+        "Code": "pollyweb.org/HOST", 
         "Locator": "SALON"
     }
     '''

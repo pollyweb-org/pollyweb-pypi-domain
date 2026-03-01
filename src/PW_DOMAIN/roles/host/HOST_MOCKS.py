@@ -64,7 +64,7 @@ class HOST_MOCKS(HOST, AWS_TEST):
             domain= host,
             table= 'LOCATORS',
             items=[{
-                "ID": f"nlweb.org/HOST,{locator}",
+                "ID": f"pollyweb.org/HOST,{locator}",
                 "Talker": talker
             }])
 
@@ -89,7 +89,7 @@ class HOST_MOCKS(HOST, AWS_TEST):
         script = '\n'.join([
             '# Order workflow.',
             '💬|Order:',
-            '- SHARE|nlweb.org/PROFILE/NAME/FRIENDLY',
+            '- SHARE|pollyweb.org/PROFILE/NAME/FRIENDLY',
             '- RUN|Items',
             '- CHARGE|{amount}',
             '- INFO|Wait...',

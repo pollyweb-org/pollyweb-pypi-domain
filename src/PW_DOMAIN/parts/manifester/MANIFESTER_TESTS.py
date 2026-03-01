@@ -242,7 +242,7 @@ class MANIFESTER_TESTS(MANIFESTER, AWS_TEST):
         cls.MOCKS().MANIFESTER().MockManifester(manifest= m)
 
         # Compare if equal
-        resp = cls.WEB().HttpGet('https://nlweb.any-domain.com/manifest')
+        resp = cls.WEB().HttpGet('https://pollyweb.any-domain.com/manifest')
         cls.AssertEqual(m.ToYaml(), resp, 'General OK?')
 
         # Clean up again
@@ -253,7 +253,7 @@ class MANIFESTER_TESTS(MANIFESTER, AWS_TEST):
         custom = MANIFEST({'Identity':{'Domain':'d.com'}})
         cls.MOCKS().MANIFESTER().MockManifester(manifest= custom)
 
-        resp = cls.WEB().HttpGet('https://nlweb.any-domain.com/manifest')
+        resp = cls.WEB().HttpGet('https://pollyweb.any-domain.com/manifest')
         cls.AssertEqual(resp, custom.ToYaml(), 'Changed to customized?')
 
 

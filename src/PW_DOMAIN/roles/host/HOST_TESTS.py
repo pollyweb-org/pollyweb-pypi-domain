@@ -93,7 +93,7 @@ class HOST_TESTS(HOST, AWS_TEST):
             },
             "Body": {
                 "SessionID": "61738d50-d507-42ff-ae87-48d8b9bb0e5a",
-                "Code": "nlweb.org/HOST",
+                "Code": "pollyweb.org/HOST",
                 "Locator": "<locator>",
                 "Language": "en-us",    
                 "Binds": [
@@ -260,7 +260,7 @@ class HOST_TESTS(HOST, AWS_TEST):
         script = '\n'.join([
             '# Order workflow.',
             '💬|Order:',
-            '- SHARE|nlweb.org/PROFILE/NAME/FRIENDLY',
+            '- SHARE|pollyweb.org/PROFILE/NAME/FRIENDLY',
             '- RUN|Items',
             '- CHARGE|{amount}',
             '- INFO|Wait...',

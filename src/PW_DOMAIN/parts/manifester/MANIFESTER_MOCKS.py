@@ -52,7 +52,7 @@ class MANIFESTER_MOCKS(MANIFESTER, AWS_TEST):
             value= yaml)
         
         cls.MOCKS().WEB().MockUrl(
-            url= f'https://nlweb.{domain}/manifest',
+            url= f'https://pollyweb.{domain}/manifest',
             handler= cls._handleManifest,
             domain= domain)
         

@@ -28,7 +28,7 @@ class TALKER_TESTS(TALKER, AWS_TEST):
         return '\n'.join([
             '# Order workflow.',
             '💬|Order:',
-            '- SHARE|nlweb.org/PROFILE/NAME/FRIENDLY',
+            '- SHARE|pollyweb.org/PROFILE/NAME/FRIENDLY',
             '- RUN|Items',
             '- CHARGE|{amount}',
             '- INFO|Wait...',

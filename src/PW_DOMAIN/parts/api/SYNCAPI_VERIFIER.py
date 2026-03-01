@@ -9,7 +9,7 @@ class SYNCAPI_VERIFIER(SYNCAPI):
 
     
     def __init__(self) -> None:
-        self.text = "{\"Header\":{\"Correlation\":\"bb37d258-015c-497e-8a67-50bf244a9299\",\"Timestamp\":\"2023-06-24T23:08:24.550719Z\",\"To\":\"105b4478-eaa5-4b73-b2a5-4da2c3c2dac0.dev.nlweb.org\",\"Subject\":\"AnyMethod\",\"Code\":\"nlweb.org/msg\",\"Version\":\"1\",\"From\":\"105b4478-eaa5-4b73-b2a5-4da2c3c2dac0.dev.nlweb.org\"},\"Body\":{}}"
+        self.text = "{\"Header\":{\"Correlation\":\"bb37d258-015c-497e-8a67-50bf244a9299\",\"Timestamp\":\"2023-06-24T23:08:24.550719Z\",\"To\":\"105b4478-eaa5-4b73-b2a5-4da2c3c2dac0.dev.pollyweb.org\",\"Subject\":\"AnyMethod\",\"Code\":\"pollyweb.org/msg\",\"Version\":\"1\",\"From\":\"105b4478-eaa5-4b73-b2a5-4da2c3c2dac0.dev.pollyweb.org\"},\"Body\":{}}"
         self.hash = "ee6ca2a43ec05d0bd855803407b9350e6c84dd1b981274e51ce0a0a8be16e4a1"
         self.algorithm = "SHA256"
         self.privateKey = "-----BEGIN RSA P{REMOVE-GIT}RIVATE KEY-----\nMIIEpAIBAAKCAQEAu6BtCd1lWxCxmddGMIqxivaRjp4AO/PriDWA6ZIyk20I4bjc\nvcl6qAgj4VeuvRx+qBkmZ1hRu0j87fBPYm7XiGQsvLJ2ctG3XeddWRH5DWxnR3tM\nObQvYIAGwoV8hetNyQLBSBGPzgkGyhGXoLGyY7CfjQaiR8TDLqiZZG1MPIPmbJds\n1DeT+vYIsKH7OQymcPg1yTZMAdoBsYuisEN/tVoTsLQY9qXkJSS99li9W7AcNKIP\nBtz9gG0A3ZQKnO7NjZc/f+Seb0h0SMjPMrmBC88NRQqId2znKtALawXdp6yLe5IL\n1M/rUVIHLqs2hZEDjH++3ZNm4AUO7co8MTmscQIDAQABAoIBAA5y2g1r7LhjY+He\nd5ZuX8y9PylLQTuyBX3Nl6SlBbBfsag8RazMfV2/lA/FjPxy23gTc7x6oH9P2BZ0\nrpBRy9bs1pseEna2Gqz9ule3xW+YslK0C9iCZ9xCZQLe0l+NEXDnfZM7XaZ2qydY\nInk/+zunvX8CjJsCloCbKtuBJTagVHnxPIuDGtA5bSv4QhGbKEbSBN5X1KA/HAYj\nHl4CNAMZpz1eqkQupzXzBt557BuIsK7VTx2M6wXIRzY7QgZVzE4zouqgHHT09Lp+\n0W4xjmYSuCHfZ/8cC6ZpQW5bxsQQUv9ioW3Xr7nX2pnPs/3ypFrXp/c1H99tQhf0\nYVmRvakCgYEAyfGvht0JlaVhuRjUYbNQFMgQzH+VQzepinMDtbM/m4NcdVEza8V7\ngoQahWRSIHJM9vDpQoCuLVKNr0RVYNwcLyOr4RpBfWLwa0ExUDyRj7fYsp913yUv\nuG2hWFunmmaKLDqearVcoC5veLLGAQHBwCPX4QqRtW/LJ3ULaKUFwpUCgYEA7dmh\n2Q9zzugg1SGo9RzxxuE4C7lf0hRAqsj+gwasumQbYHzPPhHuew/4vRJ0dBJomrmq\ng5bCfracgYQnOUHzry2nGp2Eia6GMad/5U6NogessO8AxW40A3kOJF+ljwUn7op2\nYdYje56KK9uj2f/iY13EJ8VoY9f4BR42Fyh0x20CgYEAo2Vlk6aXUbjd6Cl59o9i\ntV3nkb+NYzTPflFvZ/5f8hGIpvgLtiC0vbbrypCQjuZM9eWZpxB9XfiU4YJV3qha\nOZ4QPXPEF5MNWosGPpizYmjr8iNp+SKaiQxTZy3J3/klxYGsmkSibI0F7tAfu8LT\nJQcbbl/h479Pzl462/HiRj0CgYAiwPINLVzWlsR1X/24Ewqg7LervuJpZ9wrGENY\nEdmbQpVde98sSqJ2CNdniRLLAwWV1hs8LwMsULJ9mjnA/AoHRrxr/ygmlgG1r6vY\nban0SvrIv6N1Na0T9NRELFWcmDxFdqXllcyJe5jk36sJZ4JE0qaeyRF/xUbQOKHe\nsGKf4QKBgQCeJR1IslIsjFhaa8hsOXI0K/bJGIt+IOuECq4sy8RH51zF1x7YR51P\nNAq+3F9PYDJE+LjkqQALZZYEaiBruPSdRfqXvEOrrnC1koB+gBFD27ABeQASqRvm\nRTqj7Zw9UOmFZDdDUcEwFuM7Bu0O9UTm3f2zsKsnFwLon3mvazhMmw==\n-----END RSA PRIVATE KEY-----\n"
@@ -81,7 +81,7 @@ class SYNCAPI_VERIFIER(SYNCAPI):
 
     def VerifyDkimReader(self, task:DEPLOYER_EXEC_LAMBDA):
         ret = task.InvokeLambda({
-            "hostname": "nlweb._domainkey.nlweb.org"
+            "hostname": "pollyweb._domainkey.pollyweb.org"
         })
         
         if ret == 'NOT FOUND!':

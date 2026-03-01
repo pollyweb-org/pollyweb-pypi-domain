@@ -8,21 +8,21 @@ class QR_TESTS(QR):
    
     @classmethod
     def Test__str__(cls):
-        s = '🤝nlweb.org/QR,1,any-printer.com,7V8KD3G'
+        s = '🤝pollyweb.org/QR,1,any-printer.com,7V8KD3G'
         q = QR(s)
         TESTS.AssertEqual(f'{q}', s)
 
 
     @classmethod
     def Test_parse(cls):
-        q = QR('🤝nlweb.org/QR,1,any-printer.com,7V8KD3G')
+        q = QR('🤝pollyweb.org/QR,1,any-printer.com,7V8KD3G')
 
         with TESTS.AssertValidation('Missing icon'):
-            QR('nlweb.org/QR,1,any-printer.com,7V8KD3G')
+            QR('pollyweb.org/QR,1,any-printer.com,7V8KD3G')
 
         TESTS.AssertEqual(q.Obj(), {
-            'QR': '🤝nlweb.org/QR,1,any-printer.com,7V8KD3G', 
-            'Code': 'nlweb.org/QR', 
+            'QR': '🤝pollyweb.org/QR,1,any-printer.com,7V8KD3G', 
+            'Code': 'pollyweb.org/QR', 
             'Version': '1', 
             'Domain': 'any-printer.com', 
             'Locator': '7V8KD3G'
@@ -32,10 +32,10 @@ class QR_TESTS(QR):
     @classmethod
     def TestIsHostCode(cls):
 
-        q = QR('🤝nlweb.org/QR,1,any-printer.com,7V8KD3G')
+        q = QR('🤝pollyweb.org/QR,1,any-printer.com,7V8KD3G')
         TESTS.AssertFalse(q.IsHostCode())
 
-        q = QR('🤝nlweb.org/HOST,1,any-printer.com,7V8KD3G')
+        q = QR('🤝pollyweb.org/HOST,1,any-printer.com,7V8KD3G')
         TESTS.AssertTrue(q.IsHostCode())
     
 

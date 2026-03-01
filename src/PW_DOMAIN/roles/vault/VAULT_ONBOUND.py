@@ -35,7 +35,7 @@ class VAULT_ONBOUND(STRUCT):
 
 
     def IsVaultBind(self): 
-        '''👉 Does the message contain a bind to nlweb.org/VAULT/BIND?'''
+        '''👉 Does the message contain a bind to pollyweb.org/VAULT/BIND?'''
         for bind in self.RequireBinds():
             if bind.RequireStr('Code') == CODE.CODES().BIND():
                 return True

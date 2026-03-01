@@ -22,7 +22,7 @@ class MSG(STRUCT):
     Example:
     {
         "Header": {
-            "Code": "nlweb.org/msg",
+            "Code": "pollyweb.org/msg",
             "Version": "1",
             "From": "any-sender.com",
             "To": "any-receiver.com",
@@ -206,7 +206,7 @@ class MSG(STRUCT):
         UTILS.AssertIsType(subject, str)
 
         ret = MSG({
-            '🤝': 'nlweb.org/MSG:1.0',
+            '🤝': 'pollyweb.org/MSG:1.0',
             'Header': {
                 'To': to,
                 'Subject': subject
@@ -222,12 +222,12 @@ class MSG(STRUCT):
         * ${Header:*}.Stamp() -> ${Header:{*, SentAt, Correlation}}
         '''
 
-        self.GetAtt('🤝', default='nlweb.org/MSG:1.0')
+        self.GetAtt('🤝', default='pollyweb.org/MSG:1.0')
         self.GetAtt('Header', default={})
         self.GetAtt('Body', default={})
         self.RequireHeader().DefaultGuid('Correlation')
         self.RequireHeader().DefaultTimestamp('SentAt')
-        self.RequireHeader().GetAtt('Code', 'nlweb.org/msg')
+        self.RequireHeader().GetAtt('Code', 'pollyweb.org/msg')
         self.RequireHeader().GetAtt('Version', '1')
 
     def Canonicalize(self) -> str:
@@ -332,7 +332,7 @@ class MSG(STRUCT):
 
         # Send it.
         to = self.RequireTo()
-        url = f'https://nlweb.{to}/inbox'
+        url = f'https://pollyweb.{to}/inbox'
 
         data = bytes(json.dumps(self.Obj()), encoding='utf-8')
         req = request.Request(url=url, method='POST', data=data)

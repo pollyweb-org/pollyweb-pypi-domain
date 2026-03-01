@@ -87,7 +87,7 @@ class DOMAIN(ACTOR):
 
     def Endpoint(self, path='') -> str:
         '''👉 Returns the domain's API endpoint.'''
-        return f'https://nlweb.{self.DomainName()}/{path}'
+        return f'https://pollyweb.{self.DomainName()}/{path}'
 
 
     def GetManifest(self) -> MANIFEST:
@@ -135,13 +135,13 @@ class DOMAIN(ACTOR):
         '''
         👉️ https://developers.google.com/speed/public-dns/docs/doh
         👉️ https://developers.google.com/speed/public-dns/docs/doh/json
-        👉️ https://dns.google/resolve?name=nlweb._domainkey.38ae4fa0-afc8-41b9-85ca-242fd3b735d2.dev.nlweb.org&type=TXT&do=1
+        👉️ https://dns.google/resolve?name=pollyweb._domainkey.38ae4fa0-afc8-41b9-85ca-242fd3b735d2.dev.pollyweb.org&type=TXT&do=1
         '''
 
         if self._google:
             return self._google
         
-        hostname = f'nlweb._domainkey.{self._domain}'
+        hostname = f'pollyweb._domainkey.{self._domain}'
         url = f'https://dns.google/resolve?name={hostname}&type=TXT&do=1'
 
         from WEB import WEB
@@ -197,7 +197,7 @@ class DOMAIN(ACTOR):
         
 
     def HandleRegisterer(self):
-        ''' 👉 host -t NS 105b4478-eaa5-4b73-b2a5-4da2c3c2dac0.dev.nlweb.org '''
+        ''' 👉 host -t NS 105b4478-eaa5-4b73-b2a5-4da2c3c2dac0.dev.pollyweb.org '''
         LOG.Print(f'register_domain')
 
         import os
@@ -208,9 +208,9 @@ class DOMAIN(ACTOR):
         domain = zone.GetDomainName()
         serverList = zone.GetNameServers()
         dnsSec = zone.GetDnsSec()
-        nlwebOrg = 'z6jsx3ldteaiewnhm4dwuhljzi0vrxgn.lambda-url.us-east-1.on.aws'
+        pollywebOrg = 'z6jsx3ldteaiewnhm4dwuhljzi0vrxgn.lambda-url.us-east-1.on.aws'
 
-        url = f'https://{nlwebOrg}/?domain={domain}&servers={serverList}&dnssec={dnsSec}'
+        url = f'https://{pollywebOrg}/?domain={domain}&servers={serverList}&dnssec={dnsSec}'
 
         from WEB import WEB
         WEB().HttpGet(url)

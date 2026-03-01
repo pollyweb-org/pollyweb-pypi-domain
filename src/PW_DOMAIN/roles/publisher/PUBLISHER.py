@@ -44,7 +44,7 @@ class PUBLISHER(HANDLER):
         ''' 🐌 https://quip.com/sBavA8QtRpXu/-Publisher#temp:C:IEKf5f88769121840418de6755e4 
         {
             "Header": {
-                "From": "38ae4fa0-afc8-41b9-85ca-242fd3b735d2.dev.nlweb.org"
+                "From": "38ae4fa0-afc8-41b9-85ca-242fd3b735d2.dev.pollyweb.org"
             }
             "Body": {
                 "Filter": {}
@@ -61,7 +61,7 @@ class PUBLISHER(HANDLER):
         ''' 🐌 https://quip.com/sBavA8QtRpXu#temp:C:IEK2b8247c67fae4d4487321c2e1 
         {
             "Header": {
-                "From": "38ae4fa0-afc8-41b9-85ca-242fd3b735d2.dev.nlweb.org"
+                "From": "38ae4fa0-afc8-41b9-85ca-242fd3b735d2.dev.pollyweb.org"
             }
         }
         '''
@@ -74,7 +74,7 @@ class PUBLISHER(HANDLER):
         ''' 🐌 https://quip.com/sBavA8QtRpXu/-Publisher#temp:C:IEK5a453bcdb55e4d41bcc57bbc6 
         {
             "Header": {
-                "From": "38ae4fa0-afc8-41b9-85ca-242fd3b735d2.dev.nlweb.org"
+                "From": "38ae4fa0-afc8-41b9-85ca-242fd3b735d2.dev.pollyweb.org"
             }
         }
         '''
@@ -171,7 +171,7 @@ class PUBLISHER(HANDLER):
         '''
         {
             "Header": {
-                "From": "38ae4fa0-afc8-41b9-85ca-242fd3b735d2.dev.nlweb.org"
+                "From": "38ae4fa0-afc8-41b9-85ca-242fd3b735d2.dev.pollyweb.org"
             },
             "Body": {
                 "Since": "2023-06-10T13:45:00.000Z"

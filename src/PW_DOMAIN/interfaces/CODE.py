@@ -32,12 +32,12 @@ class CODE(ITEM, CODE_CODES):
             {
                 "Output": "SHARE",
                 "Version": "1.2",
-                "Location": "https://airlines.any-igo.org/nlweb/schemas/SSR-WCHR.json"
+                "Location": "https://airlines.any-igo.org/pollyweb/schemas/SSR-WCHR.json"
             },
             {
                 "Output": "QR",
                 "Version": "1",
-                "Inherits": "nlweb.org/TOKEN:1",
+                "Inherits": "pollyweb.org/TOKEN:1",
                 "Format": "IsElectric, Size, NeedsAssistant, DateOfBirth"
             }
         ]

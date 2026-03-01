@@ -158,7 +158,7 @@ class SYNCAPI_MOCKS(SYNCAPI, AWS_TEST):
         cls.SetDomain(domain=domain)
 
         return WEB().HttpPost(
-            url= f'https://nlweb.{domain}/inbox',
+            url= f'https://pollyweb.{domain}/inbox',
             body= event)
     
 

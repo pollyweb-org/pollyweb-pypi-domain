@@ -8,7 +8,7 @@ from PW_UTILS.LOG import LOG
 class QR(STRUCT):
     ''' 🔆 QR Code.
     * Docs: https://quip.com/zE0MAiuuPMaE/-NFC-QR 
-    * Example: 🤝nlweb.org/QR,1,any-hairdresser.com,7V8KD3G
+    * Example: 🤝pollyweb.org/QR,1,any-hairdresser.com,7V8KD3G
     '''
 
 
@@ -46,7 +46,7 @@ class QR(STRUCT):
     def Parse(self, string:str):
         '''👉 Parses the QR string.
 
-        Example: 🤝nlweb.org/QR,1,any-printer.com,7V8KD3G 
+        Example: 🤝pollyweb.org/QR,1,any-printer.com,7V8KD3G 
         '''
         LOG.Print(f'🔆 QR.Parse()', f'{string=}')
 
@@ -69,7 +69,7 @@ class QR(STRUCT):
 
     def RequireDomain(self):
         '''👉 Returns the target domain name that owns the Resource.
-        * Example: nlweb.org'''
+        * Example: pollyweb.org'''
         return self.RequireStr('Domain')
         
 
@@ -80,13 +80,13 @@ class QR(STRUCT):
 
     def RequireCode(self):
         '''👉 Returns the code that defines the structure of the resource.
-        * Example: nlweb.org/HOST'''
+        * Example: pollyweb.org/HOST'''
         return self.RequireStr('Code')    
     
 
     def IsHostCode(self) -> bool:
         '''👉 Indicates if the resource is used to checkin into a host.'''
-        return self.RequireCode() == 'nlweb.org/HOST'
+        return self.RequireCode() == 'pollyweb.org/HOST'
     
 
     def RequireQR(self):
@@ -95,11 +95,11 @@ class QR(STRUCT):
 
     @classmethod
     def ComposeHost(cls, host:str,locator:str):
-        return f'🤝nlweb.org/HOST,1.0,{host},{locator}'
+        return f'🤝pollyweb.org/HOST,1.0,{host},{locator}'
     
     
     @classmethod
     def ComposeEphemeral(cls, host:str, locator:str, pin:str):
-        return f'🤝nlweb.org/HOST,1.0,{host},{locator},{pin}'
+        return f'🤝pollyweb.org/HOST,1.0,{host},{locator},{pin}'
     
 

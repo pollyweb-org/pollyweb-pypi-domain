@@ -38,21 +38,21 @@ class MANIFEST_MOCKS():
                 {
                     "Action": "GRANT",
                     "Role": "CONSUMER",
-                    "Query": "nlweb.org/PAY/COLLECTOR",
+                    "Query": "pollyweb.org/PAY/COLLECTOR",
                     "Domain": "any-seller.org"
                 },
                 {
                     "Action": "GRANT",
                     "Roles": ["VAULT", "CONSUMER"],
-                    "Queries": ["nlweb.org/PAY/PAYMENT"],
+                    "Queries": ["pollyweb.org/PAY/PAYMENT"],
                     "Domain": "any-payer.org"
                 },
                 {
                     "Action": "GRANT",
                     "Roles": ["VAULT","CONSUMER"],
                     "Queries": [
-                        "nlweb.org/PAY/COLLECTOR", 
-                        "nlweb.org/PAY/PAYMENT"
+                        "pollyweb.org/PAY/COLLECTOR", 
+                        "pollyweb.org/PAY/PAYMENT"
                     ],
                     "Domain": "any-collector.org"
                 }
@@ -61,7 +61,7 @@ class MANIFEST_MOCKS():
             "Codes": [
                 {
                     "Path": "/BANK",
-                    "Delegator": "nlweb.org"
+                    "Delegator": "pollyweb.org"
                 },
                 {
                     "Path": "/<code>",
@@ -90,7 +90,7 @@ class MANIFEST_MOCKS():
                 },
                 {
                     "Path": "/BANK/BALANCE",
-                    "Delegator": "nlweb.org",
+                    "Delegator": "pollyweb.org",
                     "Name": "Bank account balance",
                     "Translations": [{
                         "Language": "pt-br",

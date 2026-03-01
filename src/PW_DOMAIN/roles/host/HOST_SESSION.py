@@ -22,7 +22,7 @@ class HOST_SESSION(ITEM):
     {
         "Broker": "any-domain.com",
         "SessionID": "125a5c75-cb72-43d2-9695-37026dfcaa48",
-        "Code": "nlweb.org/THING",
+        "Code": "pollyweb.org/THING",
         "Host": "any-host.org",
         "Locator": "MY-THING-ID"
         "Language": "en-us",

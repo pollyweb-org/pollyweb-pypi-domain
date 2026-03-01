@@ -3,12 +3,12 @@
 # 👉 https://stackoverflow.com/questions/33533148/how-do-i-type-hint-a-method-with-the-type-of-the-enclosing-class
 from __future__ import annotations
 
-from typing import Any, Union
-from .code.CODE import CODE
+from typing import Union
+from ..code.CODE import CODE
 from PW_UTILS.STRUCT import STRUCT
 from PW_UTILS.UTILS import UTILS
 from PW_UTILS.LOG import LOG
-from .manifest.MANIFEST_TRUST import MANIFEST_TRUST
+from .MANIFEST_TRUST import MANIFEST_TRUST
 
 
 class ManifestNotAvailableException(Exception):
@@ -20,7 +20,7 @@ class MANIFEST(STRUCT):
     Docs: https://quip.com/lcSaAX7AiEXL/-Domain#temp:C:RSE47ce7d6dfbd749689ca1b8a8b
     '''
 
-    def __init__(self, manifest: Union[str, "MANIFEST", Any] = None, section: str | None = None):
+    def __init__(self, manifest: Union[str, "MANIFEST", any] = None, section: str = None):
         obj = manifest
 
         if isinstance(manifest, str):
@@ -78,17 +78,13 @@ class MANIFEST(STRUCT):
     def GetBigIcon(self):
         return self.GetIdentity().GetStr('BigIcon')
 
-    def GetTranslations(self, default: list[Any] | None = None):
+    def GetTranslations(self, default=[]):
         '''👉 Returns a list of translations.
         * List [*] -> [*]
         * Empty list -> []
         * No list at all -> []
         '''
-        fallback = [] if default is None else default
-        ret = self.GetIdentity().GetAtt('Translations', default=fallback)
-        if ret is None:
-            return fallback
-        return ret
+        return self.GetIdentity().GetAtt('Translations', default=default)
 
     def Translate(self, language) -> str:
         '''
@@ -121,7 +117,7 @@ class MANIFEST(STRUCT):
     def GetCodeDelegate(self, path: str):
         return self.GetStruct('Delegates').First('Code', equals=path)
 
-    def GetCodeByPath(self, path: str, delegator: str | None = None) -> CODE:
+    def GetCodeByPath(self, path: str, delegator: str = None) -> CODE:
         '''📜 Returns the code struct with a certain code string.
         * https://quip.com/3mKNASbBpnng#temp:C:eVd66f7803481a34db7a14b6698e
         '''

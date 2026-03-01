@@ -71,7 +71,7 @@ class TALK_TESTS(TALK, AWS_TEST):
         return '\n'.join([
             '# Order workflow.',
             '💬|Order:',
-            '- SHARE|nlweb.org/PROFILE/NAME/FRIENDLY',
+            '- SHARE|pollyweb.org/PROFILE/NAME/FRIENDLY',
             '- RUN|Items',
             '- CHARGE|{amount}',
             '- INFO|Wait...',
@@ -96,7 +96,7 @@ class TALK_TESTS(TALK, AWS_TEST):
         # Test multi line script.
         talk = cls._initParseScript([
             '💬|Order:',
-            '- SHARE|nlweb.org/PROFILE/NAME/FRIENDLY',
+            '- SHARE|pollyweb.org/PROFILE/NAME/FRIENDLY',
             '- RUN|Items',
             '- CHARGE|{amount}',
             '- INFO|Wait...'
@@ -112,7 +112,7 @@ class TALK_TESTS(TALK, AWS_TEST):
         # Test a step.
         share = order.Steps()[0]
         cls.AssertEqual(share.Format(), 'SHARE')
-        cls.AssertEqual(share.FirstArg(), 'nlweb.org/PROFILE/NAME/FRIENDLY')
+        cls.AssertEqual(share.FirstArg(), 'pollyweb.org/PROFILE/NAME/FRIENDLY')
 
         # Test a charge.
         charge = order.Steps()[2]
@@ -245,7 +245,7 @@ class TALK_TESTS(TALK, AWS_TEST):
     def TestGetNext(cls):
         '''
         0)   💬|Order:
-        0.0) - SHARE|nlweb.org/PROFILE/NAME/FRIENDLY
+        0.0) - SHARE|pollyweb.org/PROFILE/NAME/FRIENDLY
         0.1) - RUN|Items
         0.2) - CHARGE|{amount}
         0.3) - INFO|Wait...
