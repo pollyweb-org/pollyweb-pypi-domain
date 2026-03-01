@@ -5,7 +5,7 @@ from typing import Any, Callable, Optional
 
 from PW_UTILS.LOG import LOG
 from PW_UTILS.UTILS import UTILS
-from .msg.MSG import MSG
+from .MSG import MSG
 
 
 class MSG_RECEIVER:

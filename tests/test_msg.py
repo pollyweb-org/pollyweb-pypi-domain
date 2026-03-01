@@ -1,6 +1,6 @@
 import pytest
 
-from PW_DOMAIN.interfaces.msg.MSG import MSG
+from PW_DOMAIN.interfaces.MSG import MSG
 
 
 class DummyValidator:

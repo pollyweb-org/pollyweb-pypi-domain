@@ -1,6 +1,6 @@
 from PW_UTILS.UTILS import UTILS
 from PW_UTILS.STRUCT import STRUCT
-from .code.CODE import CODE
+from .CODE import CODE
 from PW_UTILS.LOG import LOG
 
 
