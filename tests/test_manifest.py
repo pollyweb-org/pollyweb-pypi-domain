@@ -1,6 +1,6 @@
 import pytest
 
-from PW_DOMAIN.MANIFEST import MANIFEST
+from PW_DOMAIN.interfaces.manifest.MANIFEST import MANIFEST
 
 
 def _manifest_dict():

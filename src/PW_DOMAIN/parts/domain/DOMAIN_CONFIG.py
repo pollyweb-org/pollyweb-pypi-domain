@@ -1,7 +1,7 @@
 from PW_UTILS.STRUCT import STRUCT
 from PW_UTILS.UTILS import UTILS
 from PW_UTILS.LOG import LOG
-from .MANIFEST import MANIFEST
+from .interfaces.manifest.MANIFEST import MANIFEST
 
 
 class DOMAIN_CONFIG(STRUCT):

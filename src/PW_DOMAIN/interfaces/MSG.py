@@ -365,6 +365,6 @@ class MSG(STRUCT):
 
     def RequireCode(self, att: str) -> str:
         code = self.RequireStr(att)
-        from .CODE import CODE
+        from ..code.CODE import CODE
         CODE.Verify(code)
         return code

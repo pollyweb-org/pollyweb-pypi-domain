@@ -1,6 +1,6 @@
 import os
 
-from PW_DOMAIN.DOMAIN_PARSER import DOMAIN_PARSER
+from PW_DOMAIN.parts.domain.DOMAIN_PARSER import DOMAIN_PARSER
 
 
 def _write(path, content):
